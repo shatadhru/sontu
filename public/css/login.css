@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+::selection {
+  background: #4158d0;
+  color: #fff;
+}
+
+.wrapper {
+  width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  background: linear-gradient(-135deg, #667eea, #764ba2);
+}
+
+.wrapper form {
+  padding: 30px;
+}
+
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: #667eea;
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: #667eea;
+  background: #fff;
+  padding: 0 5px;
+}
+
+form .content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+form .content input {
+  width: 18px;
+  height: 18px;
+}
+
+form .content label {
+  color: #666;
+  user-select: none;
+  padding-left: 5px;
+}
+
+form .content .pass-link a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+form .content .pass-link a:hover {
+  color: #764ba2;
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #667eea, #764ba2);
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+form .field input[type="submit"]:hover {
+  background: linear-gradient(-135deg, #764ba2, #667eea);
+}
+
+form .field input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+form .signup-link {
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .signup-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+form .signup-link a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
